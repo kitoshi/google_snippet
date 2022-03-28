@@ -11,7 +11,7 @@ export default function Home() {
     'C/C++',
     'PHP',
     'R',
-    'Objective-C',
+    'HTML',
     'Swift',
     'Typescript',
     'Golang',
@@ -33,7 +33,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Widget languages={languages} />
+        <Widget languages={languages.sort()} />
       </main>
     </div>
   )

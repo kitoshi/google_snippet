@@ -1,0 +1,33 @@
+.widget section {
+  display: flex;
+}
+
+.widget section.language-tab {
+  border: 1px solid #dadce0;
+  flex-direction: row;
+}
+
+.widget section.language-text {
+  border: 1px solid #dadce0;
+  border-top: 0px;
+  flex-direction: column;
+}
+
+.widget section.language-code {
+  border: 1px solid #dadce0;
+  border-top: 0px;
+  background-color: #f1f3f4;
+}
+
+.widget button {
+  min-width: 5vw;
+  min-height: 5vh;
+}
+
+.widget p {
+  margin: 2% 2%;
+}
+
+.widget code {
+  margin: 4% 2%;
+}

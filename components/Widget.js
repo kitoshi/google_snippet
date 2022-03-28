@@ -1,6 +1,7 @@
-import InstallText from './Information'
+import LanguageText from './LanguageText'
 import styles from './Widget.module.css'
 import propTypes from 'prop-types'
+import LanguageCode from './LanguageCode'
 
 export default function Widget(props) {
   Widget.propTypes = {
@@ -8,13 +9,20 @@ export default function Widget(props) {
   }
 
   const languageTab = props.languages.map((item) => (
-    <tab key={item}>{item}</tab>
+    <button key={item} type='button'>
+      {item}
+    </button>
   ))
 
   return (
-    <div className={styles.Widget}>
-      <section>{languageTab}</section>
-      <InstallText />
+    <div className={styles.widget}>
+      <section className={styles['language-tab']}>{languageTab}</section>
+      <section className={styles['language-text']}>
+        <LanguageText />
+      </section>
+      <section className={styles['language-code']}>
+        <LanguageCode />
+      </section>
     </div>
   )
 }
