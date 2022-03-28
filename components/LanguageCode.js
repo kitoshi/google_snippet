@@ -1,4 +1,4 @@
-export default function LanguageCode(props) {
+export default function LanguageCode() {
   return (
     <>
       <code>Install-Package Google.Apis</code>

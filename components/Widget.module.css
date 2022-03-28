@@ -1,5 +1,7 @@
 .widget section {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .widget section.language-tab {
@@ -40,7 +42,18 @@
 
 .widget button.language-button:active,
 .widget button.language-button:focus {
-  outline: 1px dashed #5f6368;
+  outline: none;
+  border-bottom: 2px solid #1a73e8;
+  border-radius: 3px 3px 0 0;
+}
+
+.widget button.active {
+  outline: none;
+  border-bottom: 2px solid #1a73e8;
+  border-radius: 3px 3px 0 0;
+}
+
+.widget button.inactive {
   border-bottom: 2px solid #1a73e8;
   border-radius: 3px 3px 0 0;
 }
@@ -56,4 +69,10 @@
 
 .widget code {
   margin: 4% 2%;
+}
+
+.widget input {
+  position: absolute;
+  right: 0;
+  height: 100%;
 }

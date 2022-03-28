@@ -8,7 +8,10 @@ export default function LanguageText(props) {
     <>
       <p>
         For more information, see{' '}
-        <a href=''>Setting Up a {props.language} Development Environment.</a>
+        <a href=''>
+          Setting Up a <strong>{props.language}</strong> Development
+          Environment.
+        </a>
       </p>
       <p>
         If you are using Visual Studio 2017 or higher, open nuget package
