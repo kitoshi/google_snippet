@@ -19,9 +19,35 @@
   background-color: #f1f3f4;
 }
 
-.widget button {
-  min-width: 5vw;
+.widget button.language-button {
+  min-width: 7vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   min-height: 5vh;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.widget button.language-button:hover {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #5f6368;
+  border-radius: 3px 3px 0 0;
+}
+
+.widget button.language-button:active,
+.widget button.language-button:focus {
+  outline: 1px dashed #5f6368;
+  border-bottom: 2px solid #1a73e8;
+  border-radius: 3px 3px 0 0;
+}
+
+.widget button.language-button:target {
+  border-bottom: 2px solid #5f6368;
+  border-radius: 3px 3px 0 0;
 }
 
 .widget p {
