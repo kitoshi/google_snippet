@@ -13,14 +13,16 @@ export default function Widget(props) {
   Widget.propTypes = {
     languages: propTypes.array
   }
+
   useEffect(() => {
     //pulls in the default button array from props on load
     //sets active information section to default or next pressed item
+
     let defaultButtonArray = props.languages.map((item, idx) => (
       <button
         key={item}
         type='button'
-        onClick={handleActiveResult}
+        onClick={handleActiveButtonResult}
         className={
           activeResult === item
             ? `${styles['language-button']} ${styles['active']}`
@@ -64,17 +66,19 @@ export default function Widget(props) {
       }
     }
     setResults(matches)
-
     if (e.target.value === []) {
       setResults('')
     }
   }
 
-  function handleActiveResult(e) {
-    console.log(typeof e)
-    if (typeof e === 'string') {
-      setActiveResult(e)
-    }
+  function handleActiveResult(string) {
+    //handle setting from search field
+    setActiveResult(string)
+  }
+
+  function handleActiveButtonResult(e) {
+    //handler for button press
+    setActiveResult(e.target.textContent)
   }
 
   return (

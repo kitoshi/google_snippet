@@ -19,6 +19,23 @@
   border: 1px solid #dadce0;
   border-top: 0px;
   background-color: #f1f3f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.widget div.alert {
+  position: sticky;
+  top: 85%;
+  right: 0;
+  width: 20%;
+  height: 50%;
+  background-color: white;
+  color: black;
+}
+
+.widget div.alert p {
+  margin: 5%;
 }
 
 .widget button.language-button {
@@ -30,6 +47,16 @@
   border: none;
   cursor: pointer;
   border-bottom: 2px solid transparent;
+}
+
+.widget button.copy {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 10%;
+  border: 0;
+  width: 5%;
+  background-color: transparent;
 }
 
 .widget button.language-button:hover {
