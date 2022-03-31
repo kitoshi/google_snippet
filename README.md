@@ -1,3 +1,13 @@
+## Overview
+
+Redesign of [https://cloud.google.com/speech-to-text/docs/libraries#installing_the_client_library](https://cloud.google.com/speech-to-text/docs/libraries#installing_the_client_library) installation tab menu.
+Desktop browser design improvements:
+- search field
+- alert for copy to clipboard near mouseclick
+
+
+## NextJS Boilerplate
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

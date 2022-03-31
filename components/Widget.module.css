@@ -26,16 +26,8 @@
 
 .widget div.alert {
   position: sticky;
-  top: 85%;
-  right: 0;
-  width: 20%;
-  height: 50%;
-  background-color: white;
+  background-color: #f1f3f4;
   color: black;
-}
-
-.widget div.alert p {
-  margin: 5%;
 }
 
 .widget button.language-button {
@@ -92,6 +84,10 @@
 
 .widget p {
   margin: 2% 2%;
+}
+
+.widget .alert p {
+  margin: 0;
 }
 
 .widget code {

@@ -15,7 +15,7 @@ export default function Widget(props) {
   }
 
   useEffect(() => {
-    //pulls in the default button array from props on load
+    //pulls in the default button array from props on mount
     //sets active information section to default or next pressed item
 
     let defaultButtonArray = props.languages.map((item, idx) => (
@@ -84,9 +84,12 @@ export default function Widget(props) {
   return (
     <div className={styles.widget}>
       <section className={styles['language-tab']}>
-        {results.length === 0
-          ? defaultLanguageTab.slice(0, 5)
-          : resultsLanguageTab}
+        {
+          //limit results to 5 to fit in table
+          results.length === 0
+            ? defaultLanguageTab.slice(0, 5)
+            : resultsLanguageTab.slice(0, 5)
+        }
         <input
           type='search'
           placeholder={'Search 20+ Languages'}
