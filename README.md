@@ -6,7 +6,7 @@ Desktop browser design improvements:
 - search field
 - alert for copy to clipboard near mouseclick
 
-<img src="screenshots/projectscreenshot.png" alt="project screenshot" width="960" height="480"></img>
+<img src="screenshots/projectscreenshot.png" alt="project screenshot" width="960" height="240"></img>
 
 ## NextJS Boilerplate
 
