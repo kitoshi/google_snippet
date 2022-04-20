@@ -2,9 +2,11 @@
 
 Redesign of [https://cloud.google.com/speech-to-text/docs/libraries#installing_the_client_library](https://cloud.google.com/speech-to-text/docs/libraries#installing_the_client_library) installation tab menu.
 Desktop browser design improvements:
+
 - search field
 - alert for copy to clipboard near mouseclick
 
+<img src="screenshots/projectscreenshot.png" alt="project screenshot" width="480" height="480"></img>
 
 ## NextJS Boilerplate
 
